@@ -30,7 +30,7 @@ function Tools() {
         <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
           {tools.map(({ id, icon, name }) => (
             <div
-              className="px-4 py-4 rounded-md bg-gray-800 md:flex md:justify-center md:items-center text-center"
+              className="py-4 rounded-md bg-gray-800 md:flex md:justify-center md:items-center text-center"
               key={id}
             >
               <div className="text-center">
