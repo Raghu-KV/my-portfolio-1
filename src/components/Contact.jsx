@@ -22,7 +22,11 @@ function Contact() {
           </a>
         </div>
         <div className="mt-4">
-          <a href="http://#" className="text-white">
+          <a
+            href="https://github.com/Raghu-KV"
+            className="text-white"
+            target="_blank"
+          >
             <FaGithub size={35} />
           </a>
         </div>

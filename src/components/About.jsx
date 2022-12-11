@@ -7,7 +7,7 @@ const About = () => {
       <div className="px-6">
         <div className="mb-8 text-center md:text-left">
           <span className="bg-gradient-to-r from-cyan-500 to-blue-500 font-bold bg-clip-text text-transparent text-5xl">
-            About
+            About me
           </span>
         </div>
         <p className=" text-gray-400 text-base text-justify  md:text-xl">
@@ -28,7 +28,7 @@ const About = () => {
           pariatur deserunt accusamus illum facere commodi maiores. Natus
         </p>
       </div>
-      <div className=" ml-20 hidden xl:w-full xl:block">
+      <div className=" ml-14 hidden xl:w-full xl:block">
         <img src={Hero} alt="" />
       </div>
     </div>

@@ -6,7 +6,7 @@ const Home = () => {
       <div className="container mx-auto flex items-center justify-center text-center h-screen">
         <div className="my-9">
           <p className="text-base text-gray-400 md:text-xl font-light">
-            Hello I'm{" "}
+            Hello there I'm{" "}
             <span className="text-xl md:text-3xl bg-gradient-to-r from-cyan-500 to-blue-500 font-bold bg-clip-text text-transparent mx-2">
               Raghu Nandan K V
             </span>
@@ -15,8 +15,7 @@ const Home = () => {
             Fullstack web developer
           </h1>
           <p className="text-base text-gray-400 md:text-xl font-ligh mx-7">
-            I love to build interesting things Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Consectetur, vel. Non
+            I enjoy creating things that live on the internet
           </p>
           <div className=" my-10">
             <Link to="Portfolio" smooth duration={800} offset={-150}>
