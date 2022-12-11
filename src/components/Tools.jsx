@@ -40,7 +40,7 @@ function Tools() {
                   className="w-9 mb-2 md:mb-0  mx-auto xl:w-14"
                 />
               </div>
-              <p className=" text-sm xl:text-2xl font-semibold md:ml-4 text-white">
+              <p className=" text-sm xl:text-2xl xl:font-semibold md:ml-4 text-white">
                 {name}
               </p>
             </div>
