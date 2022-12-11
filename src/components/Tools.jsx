@@ -7,7 +7,6 @@ import css from "../assets/css.png";
 import xd from "../assets/XD.png";
 import ps from "../assets/PS.png";
 import ai from "../assets/AI.png";
-sdfsdfdsfsdsdf;
 
 function Tools() {
   const tools = [
@@ -29,18 +28,6 @@ function Tools() {
           </span>
         </div>
         <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
-          {/* <div className="px-4 py-4 rounded-md bg-gray-800 md:flex md:justify-center md:items-center text-center">
-            <div className="text-center">
-              <img
-                src={HTML}
-                alt=""
-                className="w-9 mb-2 md:mb-0  mx-auto md:w-14"
-              />
-            </div>
-            <p className=" text-sm md:text-2xl font-semibold md:ml-4 text-white">
-              HTML
-            </p>
-          </div> */}
           {tools.map(({ id, icon, name }) => (
             <div
               className="px-4 py-4 rounded-md bg-gray-800 md:flex md:justify-center md:items-center text-center"
