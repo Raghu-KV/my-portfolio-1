@@ -42,9 +42,12 @@ function NavBar() {
           {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
         </div>
         {nav ? (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800   text-gray-400">
+          <ul
+            className="flex flex-col justify-center items-center absolute top-0 right-0 w-1/2 h-screen 
+          bg-gradient-to-b from-black to-gray-800 text-gray-400"
+          >
             {navLinks.map(({ id, link }) => (
-              <li className="py-6 px-4 text-4xl" key={id}>
+              <li className="py-3 px-4 text-xl" key={id}>
                 <Link
                   to={link}
                   smooth
