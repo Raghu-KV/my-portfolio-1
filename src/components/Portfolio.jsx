@@ -11,30 +11,30 @@ function Portfolio() {
       demo: "https://dapper-truffle-aa2aa2.netlify.app",
       code: "https://github.com/Raghu-KV/music-player.git",
     },
-    {
-      id: 2,
-      name: Array,
-      dis: "this project is about CURD oprations",
-      demo: "#",
-    },
-    {
-      id: 3,
-      name: Array,
-      dis: "this project is about CURD oprations",
-      demo: "#",
-    },
-    {
-      id: 4,
-      name: Array,
-      dis: "this project is about CURD oprations",
-      demo: "#",
-    },
-    {
-      id: 5,
-      name: Array,
-      dis: "this project is about CURD oprations",
-      demo: "#",
-    },
+    // {
+    //   id: 2,
+    //   name: Array,
+    //   dis: "this project is about CURD oprations",
+    //   demo: "#",
+    // },
+    // {
+    //   id: 3,
+    //   name: Array,
+    //   dis: "this project is about CURD oprations",
+    //   demo: "#",
+    // },
+    // {
+    //   id: 4,
+    //   name: Array,
+    //   dis: "this project is about CURD oprations",
+    //   demo: "#",
+    // },
+    // {
+    //   id: 5,
+    //   name: Array,
+    //   dis: "this project is about CURD oprations",
+    //   demo: "#",
+    // },
   ];
 
   return (
