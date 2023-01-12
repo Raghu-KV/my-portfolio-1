@@ -42,7 +42,7 @@ function NavBar() {
           {nav ? (
             <FaTimes size={25} className="text-white" />
           ) : (
-            <FaBars size={25} className="text-black" />
+            <FaBars size={25} className="text-white" />
           )}
         </div>
 
