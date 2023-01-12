@@ -49,7 +49,7 @@ function NavBar() {
         <ul
           className={`flex flex-col justify-center items-center absolute top-0 right-0 w-5/6 h-screen 
           bg-gradient-to-b from-black to-gray-800 text-gray-400 drop-shadow-2xl ${
-            nav ? "translate-x-0" : " translate-x-full"
+            nav ? "translate-x-0 opacity-100" : " translate-x-full opacity-0"
           } transition-all`}
         >
           {navLinks.map(({ id, link }) => (
