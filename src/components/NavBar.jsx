@@ -49,8 +49,8 @@ function NavBar() {
         <ul
           className={`flex flex-col justify-center items-center absolute top-0 right-0 w-5/6 h-screen 
           bg-gradient-to-b from-black to-gray-800 text-gray-400 drop-shadow-2xl ${
-            nav ? "translate-x-0 opacity-100" : " translate-x-full opacity-0"
-          } transition-all`}
+            nav ? "translate-x-0 opacity-100" : " translate-x-full opacity-40"
+          } ease-in-out duration-500 `}
         >
           {navLinks.map(({ id, link }) => (
             <li className="py-3 px-4 text-xl" key={id}>
