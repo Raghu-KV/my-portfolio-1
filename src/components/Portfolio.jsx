@@ -1,13 +1,40 @@
 import React from "react";
 import Array from "../assets/portfolio/arrayDestruct.jpg";
+import ReactPlayer from "../assets/portfolio/reactPlayer.png";
 
 function Portfolio() {
   const project = [
-    { id: 1, name: Array, dis: "this project is about CURD oprations" },
-    { id: 2, name: Array, dis: "this project is about CURD oprations" },
-    { id: 3, name: Array, dis: "this project is about CURD oprations" },
-    { id: 4, name: Array, dis: "this project is about CURD oprations" },
-    { id: 5, name: Array, dis: "this project is about CURD oprations" },
+    {
+      id: 1,
+      name: ReactPlayer,
+      dis: "Local music player with react",
+      demo: "https://dapper-truffle-aa2aa2.netlify.app",
+      code: "https://github.com/Raghu-KV/music-player.git",
+    },
+    {
+      id: 2,
+      name: Array,
+      dis: "this project is about CURD oprations",
+      demo: "#",
+    },
+    {
+      id: 3,
+      name: Array,
+      dis: "this project is about CURD oprations",
+      demo: "#",
+    },
+    {
+      id: 4,
+      name: Array,
+      dis: "this project is about CURD oprations",
+      demo: "#",
+    },
+    {
+      id: 5,
+      name: Array,
+      dis: "this project is about CURD oprations",
+      demo: "#",
+    },
   ];
 
   return (
@@ -19,7 +46,7 @@ function Portfolio() {
           </span>
         </div>
         <div className="flex flex-wrap justify-center">
-          {project.map(({ name, dis, id }) => (
+          {project.map(({ name, dis, id, demo, code }) => (
             <div className="w-full md:w-1/2 lg:w-1/3" key={id}>
               <div className="border border-sky-500 rounded-lg mx-2 my-2">
                 <div>
@@ -29,13 +56,21 @@ function Portfolio() {
                   {dis}
                 </p>
                 <div className="flex justify-center mb-4 mx-6">
-                  <button className="text-center block  text-base rounded-lg border border-sky-500 py-2 px-4 text-cyan-400 hover:bg-sky-500 hover:text-white duration-200 w-full mx-2">
+                  <a
+                    className="text-center block  text-base rounded-lg border border-sky-500 py-2 px-4 text-cyan-400 hover:bg-sky-500 hover:text-white duration-200 w-full mx-2"
+                    href={demo}
+                    target="_blank"
+                  >
                     Demo{" "}
-                  </button>
+                  </a>
 
-                  <button className="text-center block  text-base rounded-lg border border-sky-500 py-2 px-4 text-cyan-400 hover:bg-sky-500 hover:text-white duration-200 w-full mx-2">
+                  <a
+                    className="text-center block  text-base rounded-lg border border-sky-500 py-2 px-4 text-cyan-400 hover:bg-sky-500 hover:text-white duration-200 w-full mx-2"
+                    href={code}
+                    target="_blank"
+                  >
                     Code{" "}
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

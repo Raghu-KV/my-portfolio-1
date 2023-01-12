@@ -12,11 +12,11 @@ function NavBar() {
   ];
 
   return (
-    <div className=" text-white bg-gradient-to-l from-black to-gray-800 sticky top-0">
+    <div className=" text-white  fixed w-full top-0 backdrop-blur bg-black/70">
       <div className="container mx-auto flex justify-between items-center h-20">
         <div>
           <Link to="Home" smooth offset={-150} duration={800}>
-            <h1 className="text-5xl font-signature md:ml-0 ml-6 cursor-pointer">
+            <h1 className="text-5xl font-signature xl:ml-4 ml-6 cursor-pointer">
               Raghu
             </h1>
           </Link>
@@ -24,7 +24,7 @@ function NavBar() {
         <ul className="hidden md:flex">
           {navLinks.map(({ id, link }) => (
             <li
-              className="px-4 cursor-pointer text-gray-400 font-medium hover:scale-105 hover:text-white duration-200 text-base"
+              className="px-4 cursor-pointer text-white/80 font-medium hover:scale-105 hover:text-white duration-200 text-base"
               key={id}
             >
               <Link to={link} smooth duration={800} offset={-150}>
@@ -39,28 +39,33 @@ function NavBar() {
             setNav(!nav);
           }}
         >
-          {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
+          {nav ? (
+            <FaTimes size={25} className="text-white" />
+          ) : (
+            <FaBars size={25} className="text-white" />
+          )}
         </div>
-        {nav ? (
-          <ul
-            className="flex flex-col justify-center items-center absolute top-0 right-0 w-1/2 h-screen 
-          bg-gradient-to-b from-black to-gray-800 text-gray-400"
-          >
-            {navLinks.map(({ id, link }) => (
-              <li className="py-3 px-4 text-xl" key={id}>
-                <Link
-                  to={link}
-                  smooth
-                  duration={800}
-                  offset={-150}
-                  onClick={() => setNav(!nav)}
-                >
-                  {link}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        ) : null}
+
+        <ul
+          className={`flex flex-col justify-center items-center absolute top-0 right-0 w-5/6 h-screen 
+          bg-gradient-to-b from-black to-gray-800 text-gray-400 drop-shadow-2xl ${
+            nav && "translate-x-0"
+          } transition ease-out translate-x-full`}
+        >
+          {navLinks.map(({ id, link }) => (
+            <li className="py-3 px-4 text-xl" key={id}>
+              <Link
+                to={link}
+                smooth
+                duration={800}
+                offset={-150}
+                onClick={() => setNav(!nav)}
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

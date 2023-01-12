@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div name="Home" className="w-full">
       <div className="container mx-auto flex items-center justify-center text-center h-screen">
-        <div className="my-9">
+        <div className="mt-14">
           <p className="text-base text-gray-400 md:text-xl font-light">
             Hello there I'm{" "}
             <span className="text-xl md:text-3xl bg-gradient-to-r from-cyan-500 to-blue-500 font-bold bg-clip-text text-transparent mx-2">
