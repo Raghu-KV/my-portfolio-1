@@ -6,10 +6,17 @@ function Portfolio() {
   const project = [
     {
       id: 1,
-      name: ReactPlayer,
+      name: "ReactPlayer",
       dis: "Local music player with react",
       demo: "https://dapper-truffle-aa2aa2.netlify.app",
       code: "https://github.com/Raghu-KV/music-player.git",
+    },
+    {
+      id: 2,
+      name: "GithubFinder",
+      dis: "A project to serch github users",
+      demo: "https://github-finder-eta-puce.vercel.app",
+      code: "https://github.com/Raghu-KV/github-finder.git",
     },
     // {
     //   id: 2,
