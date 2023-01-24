@@ -1,19 +1,20 @@
 import React from "react";
 import Array from "../assets/portfolio/arrayDestruct.jpg";
 import ReactPlayer from "../assets/portfolio/reactPlayer.png";
+import GithubFinder from "../assets/portfolio/reactFinder.png";
 
 function Portfolio() {
   const project = [
     {
       id: 1,
-      name: "ReactPlayer",
+      name: ReactPlayer,
       dis: "Local music player with react",
       demo: "https://dapper-truffle-aa2aa2.netlify.app",
       code: "https://github.com/Raghu-KV/music-player.git",
     },
     {
       id: 2,
-      name: "GithubFinder",
+      name: GithubFinder,
       dis: "A project to serch github users",
       demo: "https://github-finder-eta-puce.vercel.app",
       code: "https://github.com/Raghu-KV/github-finder.git",
