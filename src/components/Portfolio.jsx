@@ -1,5 +1,4 @@
 import React from "react";
-import Array from "../assets/portfolio/arrayDestruct.jpg";
 import ReactPlayer from "../assets/portfolio/reactPlayer.png";
 import GithubFinder from "../assets/portfolio/reactFinder.png";
 
