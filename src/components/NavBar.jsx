@@ -34,7 +34,7 @@ function NavBar() {
           ))}
         </ul>
         <div
-          className="pr-6 z-10 text-gray-400 md:hidden"
+          className="pr-6 z-20 text-gray-400 md:hidden"
           onClick={() => {
             setNav(!nav);
           }}
@@ -47,10 +47,10 @@ function NavBar() {
         </div>
 
         <ul
-          className={`flex flex-col justify-center items-center absolute top-0 right-0 w-5/6 h-screen 
+          className={`flex flex-col justify-center items-center absolute top-0 right-0 w-4/6 h-screen 
           bg-gradient-to-b from-black to-gray-800 text-gray-400 drop-shadow-2xl ${
             nav ? "translate-x-0 opacity-100" : " translate-x-full opacity-40"
-          } ease-in-out duration-500 `}
+          } ease-in-out duration-500 z-10`}
         >
           {navLinks.map(({ id, link }) => (
             <li className="py-3 px-4 text-xl" key={id}>
@@ -67,6 +67,13 @@ function NavBar() {
           ))}
         </ul>
       </div>
+
+      <div
+        className={`h-screen w-screen bg-black/70 ${
+          nav ? "opacity-70" : " opacity-0"
+        }  duration-100 absolute`}
+        onClick={() => setNav(false)}
+      ></div>
     </div>
   );
 }
