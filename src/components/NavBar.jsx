@@ -48,7 +48,7 @@ function NavBar() {
 
         <ul
           className={`flex flex-col justify-center items-center absolute top-0 right-0 w-4/6 h-screen 
-          bg-gradient-to-b from-black to-gray-800 text-gray-400 drop-shadow-2xl ${
+          bg-gradient-to-b from-black to-gray-800 text-gray-400 drop-shadow-[0_35px_35px_rgba(0,0,0,100)] ${
             nav ? "translate-x-0 opacity-100" : " translate-x-full opacity-40"
           } ease-in-out duration-500 z-10`}
         >
@@ -70,7 +70,7 @@ function NavBar() {
 
       <div
         className={`h-screen w-screen bg-black/70 ${
-          nav ? "opacity-70" : " opacity-0"
+          nav ? "opacity-50" : "hidden opacity-0"
         }  duration-100 absolute`}
         onClick={() => setNav(false)}
       ></div>
