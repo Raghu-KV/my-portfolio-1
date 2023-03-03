@@ -7,9 +7,13 @@ import css from "../assets/css.png";
 import xd from "../assets/XD.png";
 import ps from "../assets/PS.png";
 import ai from "../assets/AI.png";
+import mongodb from "../assets/mongodb.svg";
+import node from "../assets/nodejs.svg";
 
 function Tools() {
   const tools = [
+    { id: 75, icon: node, name: "Node.js" },
+    { id: 45, icon: mongodb, name: "MongoDb" },
     { id: 1, icon: react, name: "React" },
     { id: 2, icon: js, name: "Java Script" },
     { id: 3, icon: tw, name: "Tailwind" },
