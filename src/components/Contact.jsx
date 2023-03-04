@@ -25,17 +25,19 @@ function Contact() {
         <div className="flex gap-3">
           <a
             href="https://github.com/Raghu-KV"
-            className="text-white text-md"
+            className="text-white text-md "
             target="_blank"
           >
-            <div className="mt-4 border px-4 py-2 rounded-full">Github</div>
+            <div className="mt-4 border px-4 py-2 rounded-full hover:bg-sky-900 duration-200">
+              Github
+            </div>
           </a>
           <a
             href="https://drive.google.com/file/d/1vQ9hLXMOc_8PX9gBusuW3a8nVEK4xmjb/view"
             className="text-white text-md"
             target="_blank"
           >
-            <div className="mt-4 border px-4 py-2 rounded-full">
+            <div className="mt-4 border px-4 py-2 rounded-full hover:bg-sky-900 duration-200">
               Download CV
             </div>
           </a>

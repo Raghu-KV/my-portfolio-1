@@ -9,14 +9,15 @@ function Portfolio() {
       name: ReactPlayer,
       dis: "Local music player with react",
       demo: "https://dapper-truffle-aa2aa2.netlify.app",
-      code: "https://github.com/Raghu-KV/music-player.git",
+      codeFE: "https://github.com/Raghu-KV/music-player.git",
+      // codeBE: "https://github.com/Raghu-KV/music-player.git",
     },
     {
       id: 2,
       name: GithubFinder,
       dis: "A project to serch github users",
       demo: "https://github-finder-eta-puce.vercel.app",
-      code: "https://github.com/Raghu-KV/github-finder.git",
+      codeFE: "https://github.com/Raghu-KV/github-finder.git",
     },
     // {
     //   id: 2,
@@ -53,9 +54,9 @@ function Portfolio() {
           </span>
         </div>
         <div className="flex flex-wrap justify-center">
-          {project.map(({ name, dis, id, demo, code }) => (
+          {project.map(({ name, dis, id, demo, codeFE, codeBE }) => (
             <div className="w-full md:w-1/2 lg:w-1/3" key={id}>
-              <div className="border border-sky-500 rounded-lg mx-2 my-2">
+              <div className="border border-sky-800 rounded-lg mx-2 my-2">
                 <div>
                   <img src={name} alt="" className="rounded-t-lg" />
                 </div>
@@ -64,19 +65,29 @@ function Portfolio() {
                 </p>
                 <div className="flex justify-center mb-4 mx-6">
                   <a
-                    className="text-center block  text-base rounded-lg border border-sky-500 py-2 px-4 text-cyan-400 hover:bg-sky-500 hover:text-white duration-200 w-full mx-2"
+                    className="text-center block  text-sm rounded-full border border-sky-900 hover:bg-sky-900 py-2 px-4 text-cyan-400  duration-200  mx-2 hover:text-white"
+                    href={codeFE}
+                    target="_blank"
+                  >
+                    code FrontEnd{" "}
+                  </a>
+                  {codeBE && (
+                    <a
+                      className="text-center block  text-sm rounded-full border border-sky-800 py-2 px-4 text-cyan-400 hover:bg-sky-900 hover:text-white duration-200  mx-2"
+                      href={codeFE}
+                      target="_blank"
+                    >
+                      code BackEnd{" "}
+                    </a>
+                  )}
+                </div>
+                <div>
+                  <a
+                    className="text-center block text-white rounded-b-md bg-sky-800 py-2 px-4  hover:bg-sky-900 hover:text-white duration-200 w-full tracking-widest text-lg"
                     href={demo}
                     target="_blank"
                   >
-                    Demo{" "}
-                  </a>
-
-                  <a
-                    className="text-center block  text-base rounded-lg border border-sky-500 py-2 px-4 text-cyan-400 hover:bg-sky-500 hover:text-white duration-200 w-full mx-2"
-                    href={code}
-                    target="_blank"
-                  >
-                    Code{" "}
+                    Live Preview
                   </a>
                 </div>
               </div>
