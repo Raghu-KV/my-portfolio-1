@@ -9,19 +9,21 @@ import ps from "../assets/PS.png";
 import ai from "../assets/AI.png";
 import mongodb from "../assets/mongodb.svg";
 import node from "../assets/nodejs.svg";
+import express from "../assets/express.svg";
 
 function Tools() {
   const tools = [
-    { id: 75, icon: node, name: "Node.js" },
-    { id: 45, icon: mongodb, name: "MongoDb" },
-    { id: 1, icon: react, name: "React" },
-    { id: 2, icon: js, name: "Java Script" },
-    { id: 3, icon: tw, name: "Tailwind" },
-    { id: 4, icon: css, name: "CSS" },
-    { id: 5, icon: HTML, name: "HTML" },
-    { id: 6, icon: xd, name: "XD" },
-    { id: 7, icon: ps, name: "Photoshop" },
-    { id: 8, icon: ai, name: "Illustrator" },
+    { id: 1, icon: mongodb, name: "MongoDb" },
+    { id: 2, icon: express, name: "Express" },
+    { id: 3, icon: react, name: "React" },
+    { id: 4, icon: node, name: "Node.js" },
+    { id: 5, icon: js, name: "Java Script" },
+    { id: 6, icon: tw, name: "Tailwind" },
+    { id: 7, icon: css, name: "CSS" },
+    { id: 8, icon: HTML, name: "HTML" },
+    { id: 9, icon: xd, name: "XD" },
+    { id: 10, icon: ps, name: "Photoshop" },
+    { id: 11, icon: ai, name: "Illustrator" },
   ];
   return (
     <div name="tools" className="container mx-auto items-center">

@@ -21,15 +21,26 @@ function Contact() {
             raghunandanv19@gmail.com
           </a>
         </div>
-        <div className="mt-4">
+        {/*  */}
+        <div className="flex gap-3">
           <a
             href="https://github.com/Raghu-KV"
-            className="text-white"
+            className="text-white text-md"
             target="_blank"
           >
-            <FaGithub size={35} />
+            <div className="mt-4 border px-4 py-2 rounded-full">Github</div>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1vQ9hLXMOc_8PX9gBusuW3a8nVEK4xmjb/view"
+            className="text-white text-md"
+            target="_blank"
+          >
+            <div className="mt-4 border px-4 py-2 rounded-full">
+              Download CV
+            </div>
           </a>
         </div>
+        {/*  */}
       </div>
     </div>
   );
