@@ -33,7 +33,7 @@ function Contact() {
             </div>
           </a>
           <a
-            href="https://drive.google.com/file/d/1vQ9hLXMOc_8PX9gBusuW3a8nVEK4xmjb/view"
+            href="https://drive.google.com/file/d/1mV5FSSSkmn73BMYsSv1aQLYW5ICvH_iW/view"
             className="text-white text-md"
             target="_blank"
           >
