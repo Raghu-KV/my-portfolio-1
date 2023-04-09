@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from "../assets/portfolio/reactPlayer.png";
 import GithubFinder from "../assets/portfolio/reactFinder.png";
+import UrlShortner from "../assets/portfolio/url-shortner.jpg";
 
 function Portfolio() {
   const project = [
@@ -18,6 +19,14 @@ function Portfolio() {
       dis: "A project to serch github users",
       demo: "https://github-finder-eta-puce.vercel.app",
       codeFE: "https://github.com/Raghu-KV/github-finder.git",
+    },
+    {
+      id: 3,
+      name: UrlShortner,
+      dis: "URL shortner with login module",
+      demo: "https://make-it-short.netlify.app",
+      codeFE: "https://github.com/Raghu-KV/url-shortner-frontend.git",
+      codeBE: "https://github.com/Raghu-KV/url-shortner-backend.git",
     },
     // {
     //   id: 2,

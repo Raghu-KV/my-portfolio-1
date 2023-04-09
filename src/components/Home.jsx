@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 const Home = () => {
   return (
-    <div name="Home" className="w-full">
+    <div name="Home" className="">
       <div className="container mx-auto flex items-center justify-center text-center h-screen">
         <div className="mt-14">
           <p className="text-base text-gray-400 md:text-xl font-light">
