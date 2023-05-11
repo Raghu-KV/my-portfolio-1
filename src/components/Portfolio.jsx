@@ -2,6 +2,7 @@ import React from "react";
 import ReactPlayer from "../assets/portfolio/reactPlayer.png";
 import GithubFinder from "../assets/portfolio/reactFinder.png";
 import UrlShortner from "../assets/portfolio/url-shortner.jpg";
+import SocketChat from "../assets/portfolio/chat.jpg";
 
 function Portfolio() {
   const project = [
@@ -27,6 +28,14 @@ function Portfolio() {
       demo: "https://make-it-short.netlify.app",
       codeFE: "https://github.com/Raghu-KV/url-shortner-frontend.git",
       codeBE: "https://github.com/Raghu-KV/url-shortner-backend.git",
+    },
+    {
+      id: 4,
+      name: SocketChat,
+      dis: "Chat app which uses Socket.io",
+      demo: "https://inspiring-praline-5cc027.netlify.app",
+      codeFE: "https://github.com/Raghu-KV/scoket-chat-front-end.git",
+      codeBE: "https://github.com/Raghu-KV/scoket-chat-back-end.git",
     },
     // {
     //   id: 2,
