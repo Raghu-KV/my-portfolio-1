@@ -3,23 +3,17 @@ import ReactPlayer from "../assets/portfolio/reactPlayer.png";
 import GithubFinder from "../assets/portfolio/reactFinder.png";
 import UrlShortner from "../assets/portfolio/url-shortner.jpg";
 import SocketChat from "../assets/portfolio/chat.jpg";
+import MERNcommercr from "../assets/portfolio/mern-e-commerce.png";
 
 function Portfolio() {
   const project = [
     {
-      id: 1,
-      name: ReactPlayer,
-      dis: "Local music player with react",
-      demo: "https://dapper-truffle-aa2aa2.netlify.app",
-      codeFE: "https://github.com/Raghu-KV/music-player.git",
-      // codeBE: "https://github.com/Raghu-KV/music-player.git",
-    },
-    {
-      id: 2,
-      name: GithubFinder,
-      dis: "A project to serch github users",
-      demo: "https://github-finder-eta-puce.vercel.app",
-      codeFE: "https://github.com/Raghu-KV/github-finder.git",
+      id: 5,
+      name: MERNcommercr,
+      dis: "E-Commerce with MERN",
+      demo: "https://tiny-fairy-95fba1.netlify.app",
+      codeFE: "https://github.com/Raghu-KV/pizza-delivery-front-end.git",
+      codeBE: "https://github.com/Raghu-KV/pizza-delivery-back-end.git",
     },
     {
       id: 3,
@@ -37,6 +31,22 @@ function Portfolio() {
       codeFE: "https://github.com/Raghu-KV/scoket-chat-front-end.git",
       codeBE: "https://github.com/Raghu-KV/scoket-chat-back-end.git",
     },
+    {
+      id: 1,
+      name: ReactPlayer,
+      dis: "Local music player with react",
+      demo: "https://dapper-truffle-aa2aa2.netlify.app",
+      codeFE: "https://github.com/Raghu-KV/music-player.git",
+      // codeBE: "https://github.com/Raghu-KV/music-player.git",
+    },
+    {
+      id: 2,
+      name: GithubFinder,
+      dis: "A project to serch github users",
+      demo: "https://github-finder-eta-puce.vercel.app",
+      codeFE: "https://github.com/Raghu-KV/github-finder.git",
+    },
+
     // {
     //   id: 2,
     //   name: Array,
