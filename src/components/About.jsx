@@ -3,7 +3,10 @@ import Hero from "../assets/heroImage.png";
 
 const About = () => {
   return (
-    <div name="About" className="container mx-auto flex items-center mb-20">
+    <div
+      name="About"
+      className="container mx-auto flex items-center justify-between mb-20"
+    >
       <div className="px-6">
         <div className="mb-8 text-center md:text-left">
           <span className="bg-gradient-to-r from-cyan-500 to-blue-500 font-bold bg-clip-text text-transparent text-5xl">
@@ -24,8 +27,8 @@ const About = () => {
           perspectives
         </p> */}
       </div>
-      <div className=" ml-14 hidden xl:w-full xl:block">
-        <img src={Hero} alt="" />
+      <div className="hidden xl:w-2/4 xl:block">
+        <img src={Hero} alt="Raghu's Photo" />
       </div>
     </div>
   );
